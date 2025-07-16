@@ -111,7 +111,7 @@ sudo bash /root/systemvm_troubleshoot.sh
 ## 👤 Author
 
 **Paramjit Patel**  
-🔗 [Portfolio](paramjitpatel.me)  
+🔗 [Portfolio](https://paramjitpatel.me)  
 📧 Reach out via GitHub or LinkedIn
 
 ---
