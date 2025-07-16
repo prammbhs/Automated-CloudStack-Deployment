@@ -15,6 +15,7 @@ This project contains a **Bash automation script** that fully sets up an Apache 
 * 💻 Optional high-resolution display settings for GUI systems
 * 🧺 Includes a built-in System VM troubleshooting tool
 * ✨ Restart-safe: Run again after failure or `--reset` to start fresh
+* 🔐 Generates a credentials file for safe reference post-setup
 
 ---
 
@@ -24,6 +25,7 @@ This project contains a **Bash automation script** that fully sets up an Apache 
 | ----------------------------- | ----------------------------------------------------- |
 | `cloudstack_setup.sh`         | Main installer script (rename from `scriptforvm.txt`) |
 | `cloudstackagentconfigfix.sh` | Fixes agent's host IP in `agent.properties`           |
+| `credentials.env`             | Auto-generated file storing credentials used          |
 
 ---
 
@@ -62,6 +64,12 @@ This project contains a **Bash automation script** that fully sets up an Apache 
    * CloudStack UI: `http://<your-ip>:8080/client`
    * Username: `admin`
    * Password: `password`
+
+5. Credentials file generated at:
+
+   ```
+   ./credentials.env
+   ```
 
 ---
 
