@@ -1,6 +1,12 @@
 # 🛠️ Automated CloudStack 4.20 Installer with KVM on Ubuntu 20.04
 
-This project provides a professional Bash automation script to set up Apache CloudStack 4.20 with KVM on a single Ubuntu 20.04 machine. It handles system setup, MySQL configuration, NFS storage, CloudStack installation, and agent connectivity — all in one go.
+This project provide---
+
+## 🧩 Optional Fix
+
+If the agent doesn't connect to the management server, you can manually configure the agent or check the troubleshooting section below.
+
+---ional Bash automation script to set up Apache CloudStack 4.20 with KVM on a single Ubuntu 20.04 machine. It handles system setup, MySQL configuration, NFS storage, CloudStack installation, and agent connectivity — all in one go.
 
 ---
 
@@ -24,9 +30,9 @@ This project provides a professional Bash automation script to set up Apache Clo
 | File                         | Description                                      |
 |------------------------------|--------------------------------------------------|
 | `cloudstack_setup.sh`        | Main installer script                           |
-| `cloudstackagentconfigfix.sh`| Fix for CloudStack agent IP setting             |
-| `credentials.env`            | Auto-generated, stores sensitive credentials    |
-| `.gitignore`                 | Git exclusion rules for safety and cleanliness  |
+| `credentials.env`            | Auto-generated, stores MySQL and CloudStack passwords |
+| `README.md`                  | This documentation file                         |
+| `LICENSE`                    | MIT License file                                |
 
 ---
 
@@ -73,12 +79,18 @@ This project provides a professional Bash automation script to set up Apache Clo
    - Username: `admin`
    - Password: `password`
 
-6. Credentials file:
-   ```
-   ./credentials.env
+6. **Credentials are stored in**: `./credentials.env`
+   
+   Example content:
+   ```bash
+   MYSQL_PASS='Root@123'
+   CLOUD_PASS='cloud'
    ```
 
-   ⚠️ This contains plaintext passwords. Do not commit this file.
+   ⚠️ **Important**: This file contains plaintext passwords. 
+   - The file is automatically created with `600` permissions (readable only by owner)
+   - Do not commit this file to version control
+   - Keep this file secure and backed up if needed
 
 ---
 
