@@ -123,7 +123,7 @@ sudo bash /root/systemvm_troubleshoot.sh
 ## 👤 Author
 
 **Paramjit Patel**  
-🔗 [Portfolio](https://paramjitpatel.me)  
+🔗 [Portfolio](https://paramjit.tech/)  
 📧 Reach out via GitHub or LinkedIn
 
 ---
