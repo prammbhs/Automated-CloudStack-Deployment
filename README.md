@@ -50,7 +50,7 @@ If the agent doesn't connect to the management server, you can manually configur
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/cloudstack-kvm-installer.git
+   git clone https://github.com/prammbhs/cloudstack-kvm-installer.git
    cd cloudstack-kvm-installer
    ```
 
